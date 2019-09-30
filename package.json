@@ -1,0 +1,19 @@
+{
+  "name": "xml_parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "xml_parser.js",
+  "author": "rj",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "jest-mock-axios": "^3.1.0"
+  },
+  "scripts": {
+    "start": "[ \"$NODE_ENV\" == \"dev\" ] && nodemon ./message.grpc.js || node ./message.grpc.js",
+    "test": "jest",
+    "test:commit": "jest"
+  }
+}
