@@ -1,4 +1,4 @@
-class lexer{
+class Lexer{
     constructor(token){
         token? this.tolex = token : undefined;
         this.makeVarDefault();
@@ -120,5 +120,5 @@ class lexer{
 }
 
 module.exports = {
-    lexer
+    Lexer
 }

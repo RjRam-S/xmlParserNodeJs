@@ -1,5 +1,5 @@
 const lex = require('./lexer');
-const lexer = new lex.lexer('raja');
+const lexer = new lex.Lexer('raja');
 
 /*
 describe('Lexer basic functionalities', () => {
@@ -96,7 +96,7 @@ describe('Lexer with input string', () => {
         expect(callingResult).toMatchObject(expectedOutput);
     });
     */
-    test('lex "<catalog><book></book></catalog>"', () => {
+    test('lex dom with children "<catalog><book></book></catalog>"', () => {
         //Arrange
         const expectedOutput = [{type: 'tag_open', tag_name: 'catalog' },
                                 {type: 'tag_open', tag_name: 'book' },
