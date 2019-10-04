@@ -51,10 +51,3 @@ class Parser{
 module.exports = {
     Parser
 }
-
-var parser = new Parser()
-var re = parser.areParanthesisBalanced([ { type: 'tag_open', tag_name: 'catalog' },
-{ type: 'tag_open', tag_name: 'book' },
-{ type: 'tag_close', tag_name: 'book' },
-{ type: 'tag_close', tag_name: 'catalog' } ]);
-console.log(re);
